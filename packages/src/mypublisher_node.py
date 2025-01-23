@@ -12,7 +12,7 @@ class MyPublisherNode(DTROS):
         # initialize the DTROS parent class
         super(MyPublisherNode, self).__init__(node_name=node_name, node_type=NodeType.GENERIC)
         # static parameters
-        self._vehicle_name = os.environ['VEHICLE_NAME']
+        self._vehicle_name = os.environ['abdelamine']
         # construct publisher
         self._publisher = rospy.Publisher('chatter', String, queue_size=10)
 
